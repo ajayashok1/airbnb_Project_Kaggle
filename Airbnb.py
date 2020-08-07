@@ -5,27 +5,6 @@ import seaborn as sns
 import matplotlib.image as mpimg
 from wordcloud import WordCloud
 
-# airbnb_data = pd.read_csv('/Users/Ajay/Desktop/AB_NYC_2019.csv')
-# airbnb_data.fillna({'reviews_per_month': 0}, inplace=True)
-# 
-# 
-# def get_room_types_among_neighbourhood_group():
-#     room_types_among_neighbourhood_group = airbnb_data.loc[
-#        airbnb_data['neighbourhood_group'].isin(['Brooklyn', 'Manhattan', 'Queens', 'Staten Island', 'Bronx'])]
-#     return room_types_among_neighbourhood_group
-# 
-# 
-# def create_room_type_plot():
-#     room_types_among_neighbourhood_group = get_room_types_among_neighbourhood_group()
-#     room_type_plot_graph = sns.catplot(x='room_type', col='neighbourhood_group',
-#                                        data=room_types_among_neighbourhood_group, kind='count',
-#                                        height=5, aspect=0.7)
-#     = room_type_plot_graph.set_xticklabels(rotation=90)
-# # return room_type_plot_graph_with_label
-# 
-# 
-# create_room_type_plot()
-
 
 def get_ingested_data_from_csv():
     data_frame = pd.read_csv('/Users/Ajay/Desktop/AB_NYC_2019.csv')
